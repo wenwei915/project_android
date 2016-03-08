@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:checkable="true"
+            android:id="@+id/my_cloud"
+            android:icon="@mipmap/my_cloud"
+            android:title="我的云端"/>
+        <item
+            android:checkable="true"
+            android:id="@+id/my_center"
+            android:icon="@mipmap/my_center"
+            android:title="个人中心"/>
+        <item
+            android:id="@+id/my_night"
+            android:checkable="true"
+            android:icon="@mipmap/my_night"
+            android:title="夜间"/>
+        <item
+            android:id="@+id/my_setting"
+            android:checkable="true"
+            android:icon="@mipmap/my_setting"
+            android:title="设置"/>
+    </group>
+
+    <!--<item android:title="Sub items">
+        <menu>
+
+        </menu>
+    </item>-->
+
+</menu>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/my_blue"
+    android:orientation="horizontal"
+    android:paddingTop="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/id_point"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/three_point"
+           />
+
+        <com.mrwo.notebook.widget.RoundImageView
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/id_point"
+            android:id="@+id/id_usericon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@mipmap/head"
+            app:border_inside_color="#FFFD"
+            app:border_thickness="1dp"/>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100dp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="语音云记事"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

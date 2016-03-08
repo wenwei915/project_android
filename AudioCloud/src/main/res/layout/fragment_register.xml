@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ee1BA3B3"
+    android:padding="15dp"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back"/>
+        <TextView
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="注册账户"
+            android:textSize="22sp"/>
+    </LinearLayout>
+    <View
+        android:layout_marginTop="15dp"
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="35dp"
+        >
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#AFFF"
+            android:inputType="textEmailAddress"
+            android:hint="邮箱"/>
+        <EditText
+            android:id="@+id/et_nick"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#AFFF"
+            android:inputType="textEmailAddress"
+            android:hint="昵称"/>
+        <EditText
+            android:id="@+id/et_psd"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="密码"
+            android:textColorHint="#AFFF"/>
+        <EditText
+            android:id="@+id/et_repsd"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="确认密码"
+            android:textColorHint="#AFFF"/>
+        <Button
+            android:id="@+id/bt_regst"
+            android:textColor="@color/my_blue"
+            android:layout_marginTop="30dp"
+            android:text="注册"
+            android:background="@drawable/btn_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+        <CheckBox
+            android:layout_gravity="center"
+            android:textSize="10sp"
+            android:textColor="#FFF"
+            android:text="已同意《云记事使用协议》"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+</LinearLayout>

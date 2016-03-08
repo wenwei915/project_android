@@ -1,0 +1,65 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:fitsSystemWindows="true"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+        <com.mrwo.notebook.widget.NoScrollViewPager
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/viewpage"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cccccc"/>
+
+        <RadioGroup
+            android:id="@+id/rg_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_recomend"
+                style="@style/My_RadioButton"
+                android:drawableTop="@drawable/ratiobutton_recomend_selector"
+                android:text="推荐" />
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/rb_audioNote"
+                style="@style/My_RadioButton"
+                android:drawableTop="@drawable/ratiobutton_audio_selector"
+                android:text="记事" />
+            <RadioButton
+                android:id="@+id/rb_audioMeeting"
+                style="@style/My_RadioButton"
+                android:drawableTop="@drawable/ratiobutton_audioroom_selector"
+                android:text="会议" />
+        </RadioGroup>
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nv_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/header_null"
+        app:menu="@menu/menu_drawer" />
+</android.support.v4.widget.DrawerLayout>

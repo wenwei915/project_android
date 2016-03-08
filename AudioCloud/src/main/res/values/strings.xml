@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">云记事本</string>
+    <string name="title_Main">语音云记事</string>
+    <string name="title_recomdetail">详情页</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
